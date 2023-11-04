@@ -2,10 +2,10 @@ version: "3"
 
 services:
   server:
-    image: srcrs/rss-reader:latest
+    image: srcrs/rss-readerpro:latest
     container_name: rss-reader
     restart: always
     ports:
-      - "8080:8080"
+      - "5237:5237"
     volumes:
       - "$PWD/config.json:/app/config.json"
