@@ -1,4 +1,4 @@
-module rss-reader
+module rss-readerpro
 
 go 1.18
 
