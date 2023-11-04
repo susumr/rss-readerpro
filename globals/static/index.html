@@ -76,16 +76,16 @@
     <el-container>
       <el-header>
         <h1>产品经理相关RSS合集</h1>
-        <div style="text-align: center; padding: 10px;">
-<span style="color: #333;">提示：产品经理充电学习辅助，提供公共平台优质的文章与观点，可每日浏览不错过高质量信息，更新频次：30min</span>
-        </div>
       </el-header>
+      <div style="text-align: center; padding: 5px;">
+          <span style="color: #333;">产品经理充电学习辅助，提供公共平台优质的文章与观点，可每日浏览不错过高质量信息，更新频次：30min</span>
+      </div>
       <el-main v-loading.fullscreen.lock="fullscreenLoading" element-loading-text="拼命加载中">
         <el-row :gutter="20">
           << range $index, $feed :=.RssDataList >>
             <el-col v-if="showSEOFlag" :xs="24" :sm="12" :md="8" :lg="6" :key="index" class="feed-col">
               <el-card class="box-card">
-                <div slot="header" class="card-header">
+                <div slot="header" class="card-header" style="margin: 10px auto;">
                   <span>
                     << $feed.Title >>
                   </span>
