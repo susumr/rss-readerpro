@@ -116,7 +116,7 @@
             << end>>
               <el-col :xs="24" :sm="12" :md="8" :lg="6" v-for="(feed, index) in feeds" :key="index" class="feed-col">
                 <el-card class="box-card">
-                  <div slot="header" class="card-header">
+                  <div slot="header" class="card-header" style="margin: 10px auto;">
                     <span>{{ feed.title }}</span>
                   </div>
                   <el-scrollbar style="height: 300px;">
@@ -143,10 +143,10 @@
         <el-link href="https://fangan.pmhub.cc" target="_blank">产品方案站</el-link>
         <span> 、 </span>
         <el-link href="https://nav.pmhub.cc" target="_blank">产品资源导航站</el-link>
-        <span> | 模版来自： </span>
+        <span> | Website Template By： </span>
         <el-link href="https://github.com/srcrs/rss-reader" target="_blank">Rss-reader</el-link>
         <span> 、 </span>
-        <el-link href="https://github.com/srcrs" target="_blank">By srcrs</el-link>
+        <el-link href="https://github.com/srcrs" target="_blank">srcrs</el-link>
       </el-footer>
     </el-container>
   </div>
