@@ -22,4 +22,4 @@ EXPOSE 5237
 RUN apk add --no-cache tzdata
 ENV TZ=Asia/Shanghai
 
-ENTRYPOINT ["./rss-reader"]
+ENTRYPOINT ["./rss-readerpro"]
