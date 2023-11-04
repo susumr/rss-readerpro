@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RSS Reader</title>
-  <meta name="description" content='RSS Reader，一个将订阅信息聚合展示的开源web工具，便于了解近期关注的信息，同时页面数据数据也实现了自动刷新。'>
+  <title>产品经理相关RSS合集</title>
+  <meta name="description" content='为产品经理量身打造的RSS聚合网站，汇集了行业内最优质的文章、新闻和观点。时刻掌握最新的行业趋势和洞察力，'>
   <meta name="keywords" content="<< .Keywords >>">
   <meta name="anthor" content="srcrs">
   <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
@@ -21,6 +21,8 @@
       text-align: center;
       color: #2c3e50;
       margin-top: 30px;
+      background-color: whitesmoke;
+}
     }
 
     .card-header {
@@ -29,6 +31,7 @@
       align-items: center;
       font-size: 18px;
       font-weight: bold;
+      margin: 10px auto;
     }
 
     .list-item {
@@ -72,7 +75,10 @@
   <div id="app">
     <el-container>
       <el-header>
-        <h1>RSS Reader</h1>
+        <h1>产品经理相关RSS合集</h1>
+        <div style="text-align: center; padding: 10px;">
+<span style="color: #333;">提示：产品经理充电学习辅助，提供公共平台优质的文章与观点，可每日浏览不错过高质量信息，更新频次：30min</span>
+        </div>
       </el-header>
       <el-main v-loading.fullscreen.lock="fullscreenLoading" element-loading-text="拼命加载中">
         <el-row :gutter="20">
@@ -131,8 +137,15 @@
         </el-row>
       </el-main>
       <el-footer>
+        <span> 友链： </span>
+        <el-link href="https://axurehub.com" target="_blank">AxureHub产品经理原型站</el-link>
+        <span> 、 </span>
+        <el-link href="https://fangan.pmhub.cc" target="_blank">产品方案站</el-link>
+        <span> 、 </span>
+        <el-link href="https://nav.pmhub.cc" target="_blank">产品资源导航站</el-link>
+        <span> | 模版来自： </span>
         <el-link href="https://github.com/srcrs/rss-reader" target="_blank">Rss-reader</el-link>
-        <span> | </span>
+        <span> 、 </span>
         <el-link href="https://github.com/srcrs" target="_blank">By srcrs</el-link>
       </el-footer>
     </el-container>
