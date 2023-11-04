@@ -4,8 +4,8 @@ COPY . /src
 WORKDIR /src
 
 #国内服务器可以取消以下注释
-#RUN go env -w GO111MODULE=on && \
-#    go env -w GOPROXY=https://goproxy.cn,direct
+RUN go env -w GO111MODULE=on && \
+    go env -w GOPROXY=https://goproxy.cn,direct
 
 RUN go build -ldflags "-s -w" -o ./bin/ .
 
@@ -16,7 +16,7 @@ COPY --from=builder /src/config.json /app/config.json
 
 WORKDIR /app
 
-EXPOSE 8080
+EXPOSE 5237
 
 # 设置时区
 RUN apk add --no-cache tzdata
