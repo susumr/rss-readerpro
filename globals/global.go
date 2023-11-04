@@ -2,7 +2,7 @@ package globals
 
 import (
 	"embed"
-	"rss-reader/models"
+	"rss-readerpro/models"
 	"sync"
 
 	"github.com/gorilla/websocket"
