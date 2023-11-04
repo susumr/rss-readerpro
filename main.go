@@ -5,10 +5,10 @@ import (
 	"html/template"
 	"log"
 	"net/http"
-	"rss-reader/globals"
-	"rss-reader/models"
+	"rss-readerpro/globals"
+	"rss-readerpro/models"
 
-	"rss-reader/utils"
+	"rss-readerpro/utils"
 	"time"
 
 	"github.com/gorilla/websocket"
@@ -29,7 +29,7 @@ func main() {
 	//加载静态文件
 	fs := http.FileServer(http.FS(globals.DirStatic))
 	http.Handle("/static/", fs)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":5237", nil))
 }
 
 func serveHome(w http.ResponseWriter, r *http.Request) {
