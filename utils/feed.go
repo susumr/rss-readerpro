@@ -2,8 +2,8 @@ package utils
 
 import (
 	"log"
-	"rss-reader/globals"
-	"rss-reader/models"
+	"rss-readerpro/globals"
+	"rss-readerpro/models"
 	"time"
 
 	"github.com/fsnotify/fsnotify"
